@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-postcss-use-bug",
+  "version": "0.0.0",
+  "description": "A reproduction case for a bug with TailwindCSS and the postcss-use plugin.",
+  "main": "src/default.css",
+  "author": "Sam Weaver <sam@samweaver.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14",
+    "postcss-use": "^3.0.0",
+    "tailwindcss": "^2.2.11"
+  },
+  "scripts": {
+    "build": "TAILWIND_MODE=build postcss src/*.css --dir dist --verbose",
+    "watch": "TAILWIND_MODE=watch postcss src/*.css --dir dist --verbose -w"
+  }
+}

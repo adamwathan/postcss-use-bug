@@ -1,0 +1,5 @@
+@use tailwindcss(config: "src/tailwind.config.default.js");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
