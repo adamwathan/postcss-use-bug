@@ -1,5 +1,6 @@
-@use tailwindcss(config: "src/tailwind.config.default.js");
+@use postcss-discard-comments(removeAll: true);
 
+/* Hello there! */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,12 +1,12 @@
 module.exports = {
-  mode: "jit",
+  mode: 'jit',
   purge: {
     enabled: true,
-    content: ["../**/*.html"],
+    content: ['./index.html'],
   },
   darkMode: false, // or 'media' or 'class'
   corePlugins: {
     preflight: true,
   },
   important: true,
-};
+}
